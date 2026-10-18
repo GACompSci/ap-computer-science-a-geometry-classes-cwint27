@@ -6,6 +6,8 @@ public class App {
         System.out.println(d.getArea());
         System.out.println(d.getRadius());
 
+        Rectange e = new Rectange(a, MathTools.randint(1, 10), MathTools.randint(1, 10));
+        System.out.println(e.getArea());
     }
 
 }
