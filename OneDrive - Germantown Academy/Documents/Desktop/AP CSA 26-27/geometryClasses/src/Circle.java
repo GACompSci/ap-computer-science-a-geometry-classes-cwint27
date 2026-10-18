@@ -7,8 +7,8 @@ public class Circle {
         center = centerpoint;
     }
 
-    public int getRadius(){
-        return radius;
+    public double getRadius(){
+        return MathTools.round(radius, 2);
     }
 
     public double getArea(){
