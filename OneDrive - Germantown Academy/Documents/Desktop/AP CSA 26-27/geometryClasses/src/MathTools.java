@@ -10,9 +10,9 @@ public class MathTools {
         }
     
     public static double distance(Point a, Point b){
-        return Math.sqrt(Math.pow((double) (b.getY()-a.getY()), 2.0)  + Math.pow((double)(b.getX()-a.getX()), 2.0));
+        return MathTools.round(Math.sqrt(Math.pow((double) (b.getY()-a.getY()), 2.0)  + Math.pow((double)(b.getX()-a.getX()), 2.0)), 2);
     }
     public static double slope(Point a, Point b){
-        return (double) (b.getY()-a.getY())/(b.getX()-a.getX());
+        return MathTools.round((double) (b.getY()-a.getY())/(b.getX()-a.getX()), 2);
     }
 }
